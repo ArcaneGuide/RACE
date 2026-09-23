@@ -166,7 +166,7 @@ function speakSmart(text) {
   function appendMessage(sender, text) {
     const p = document.createElement('p');
     p.className = sender;
-    p.textContent = sender === 'user' ? `You: ${text}` : `Ravaa: ${text}`;
+    p.textContent = sender === 'user' ? `You: ${text}` : `Race: ${text}`;
     chatDiv.appendChild(p);
     chatDiv.scrollTop = chatDiv.scrollHeight;
     if (sender === 'bot') speak(text);
